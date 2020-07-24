@@ -32,3 +32,9 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+
+-task:DotNetCoreCLI@3
+    inputs:
+    command: test
+    projects: '**/*CommanderTest/*.csproj'
+    arguments: '--configuration $(buildConfiguration)'
