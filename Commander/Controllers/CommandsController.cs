@@ -27,6 +27,9 @@ namespace Commander.Controllers
             _mapper = mapper;
         }
 
+
+
+
         //GET all commands
         [HttpGet]
         public ActionResult<IEnumerable<CommandReadDto>> GetAllCommands()
