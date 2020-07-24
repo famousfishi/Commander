@@ -17,6 +17,12 @@ variables:
 steps:
 - task: NuGetToolInstaller@1
 
+-task:DotNetCoreCLI@3
+    inputs:
+    command: test
+    projects: '**/*CommanderTest/*.csproj'
+    arguments: '--configuration $(buildConfiguration)'
+
 - task: NuGetCommand@2
   inputs:
     restoreSolution: '$(solution)'
@@ -33,8 +39,3 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
--task:DotNetCoreCLI@3
-    inputs:
-    command: test
-    projects: '**/*CommanderTest/*.csproj'
-    arguments: '--configuration $(buildConfiguration)'
