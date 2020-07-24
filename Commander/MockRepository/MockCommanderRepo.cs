@@ -20,7 +20,7 @@ namespace Commander.MockRepository
         {
             var commands = new List<Command>
             {
-                new Command { Id = 0, HowTo = "Boil an egg", Line = "Tear open a Lion's mouth", Platform = "ASP.net core 3.1" },
+                new Command { Id = 0, HowTo = "Boil an eggtoday", Line = "Tear open a Lion's mouth", Platform = "ASP.net core 3.1" },
                 new Command { Id = 1, HowTo = "Read a book", Line = "Tear open a Lion's mouth", Platform = "ASP.net core 3.1" },
                 new Command { Id = 2, HowTo = "Learn how to code", Line = "Tear open a Lion's mouth", Platform = "ASP.net core 3.1" },
                 new Command { Id = 3, HowTo = "Learn how to date a girl", Line = "Tear open a Lion's mouth", Platform = "ASP.net core 3.1" },
